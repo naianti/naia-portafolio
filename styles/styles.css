@@ -1,0 +1,69 @@
+:root {
+  --primary-color: #ffa7a6;
+  --secondary-color: #fedcdb;
+  --headind-font-family: "Playfair Display", serif;
+  --default-font-family: "Poppins", serif;
+  --default-shadow-box: -5px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+body {
+  background-color: var(--secondary-color);
+  font-family: var(--default-font-family);
+}
+
+main {
+  text-align: center;
+  padding: 60px 160px;
+}
+
+p {
+  font-size: 18px;
+  color: rgb(90, 88, 88);
+  margin: 0;
+  line-height: 30px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--headind-font-family);
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 70px;
+}
+
+.btn-branding {
+  background-color: #faf2a9;
+}
+
+.btn-branding-secondary {
+  background-color: var(--primary-color);
+}
+
+.btn-branding-secondary,
+.btn-branding {
+  padding: 12px 40px;
+  margin: 15px 20px;
+  box-shadow: var(--default-shadow-box);
+}
+
+.btn:hover {
+  background-color: #faf2a9;
+}
+
+.profile-photo {
+  width: 260px;
+}
+
+.description {
+  padding: 0 190px;
+}
+
+@media (max-width: 768px) {
+  main,
+  .description {
+    padding: 0px;
+  }
+}
