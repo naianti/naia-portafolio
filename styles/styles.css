@@ -12,12 +12,20 @@ body {
   margin: 100px 50px;
 }
 
+.container {
+  margin-left: 30px;
+}
+
 .hero {
   background-color: #ffe4e4;
 }
 
-p {
-  font-size: 18px;
+.profile-photo-about {
+  width: 400px;
+}
+
+p ul {
+  font-size: 16px;
   color: rgb(90, 88, 88);
   margin: 0;
   line-height: 30px;
@@ -58,19 +66,32 @@ h1 {
 }
 
 .description-homepage {
-  padding: 0 190px;
+  padding: 0 100px;
 }
 
-.about-section {
-  padding: 120px 16px;
+mark:hover {
+  background-color: rgb(254, 255, 211);
+  cursor: pointer;
 }
-
-.container {
-  padding: 20px;
+.underline-decoration {
+  text-decoration: underline;
+  text-decoration-color: var(--primary-color);
 }
 
 @media (max-width: 768px) {
   .description-homepage {
     padding: 0px;
+  }
+  .profile-photo-about {
+    width: 250px;
+    margin: 20px 0;
+  }
+
+  .container {
+    text-align: center;
+  }
+
+  ul {
+    list-style-position: inside;
   }
 }
