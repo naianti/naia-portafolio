@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #ffa7a6;
+  --primary-color: #fcd1d0;
   --secondary-color: #f8f8f8;
   --headind-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", serif;
@@ -17,7 +17,7 @@ body {
 }
 
 .hero {
-  background-color: #ffe4e4;
+  background-color: var(--primary-color);
 }
 
 .profile-photo-about {
@@ -69,6 +69,9 @@ h1 {
   padding: 0 100px;
 }
 
+.subtlitle-about {
+  font-weight: 600;
+}
 mark:hover {
   background-color: rgb(254, 255, 211);
   cursor: pointer;
@@ -76,6 +79,15 @@ mark:hover {
 .underline-decoration {
   text-decoration: underline;
   text-decoration-color: var(--primary-color);
+}
+
+figure img {
+  width: 80px;
+}
+
+figure img:hover {
+  padding: 10px 40px;
+  overflow: hidden;
 }
 
 @media (max-width: 768px) {
