@@ -1,9 +1,10 @@
 :root {
   --primary-color: #fcd1d0;
   --secondary-color: #f8f8f8;
+  --tertiary-color: #fdb1b0;
   --headind-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", serif;
-  --default-shadow-box: -5px 10px 20px rgba(0, 0, 0, 0.2);
+  --default-shadow-box: -2px 9px 19px rgba(0, 0, 0, 0.1);
 }
 
 body {
@@ -12,11 +13,8 @@ body {
   margin: 100px 50px;
 }
 
-.container {
-  margin-left: 30px;
-}
-
-.hero {
+.hero,
+.projects {
   background-color: var(--primary-color);
 }
 
@@ -42,12 +40,14 @@ h1 {
   font-size: 70px;
 }
 
-.btn-branding {
-  background-color: var(--secondary-color);
+.projects h2 {
+  font-size: 20px;
+  font-family: var(--default-font-family);
+  color: rgb(58, 57, 57);
 }
 
-.btn-branding-secondary {
-  background-color: var(--primary-color);
+.btn-branding {
+  background-color: var(--secondary-color);
 }
 
 .btn-branding-secondary,
@@ -58,7 +58,7 @@ h1 {
 }
 
 .btn:hover {
-  background-color: var(--secondary-color);
+  background-color: rgb(10, 173, 165);
 }
 
 .profile-photo {
@@ -90,6 +90,21 @@ figure img:hover {
   overflow: hidden;
 }
 
+.card {
+  border-radius: 20px;
+  box-shadow: var(--default-shadow-box);
+}
+
+.card-img-right {
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.card-img-left {
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
 @media (max-width: 768px) {
   .description-homepage {
     padding: 0px;
@@ -105,5 +120,15 @@ figure img:hover {
 
   ul {
     list-style-position: inside;
+  }
+  .card-img-right {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .card-img-left {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0;
   }
 }
